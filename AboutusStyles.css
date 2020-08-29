@@ -1,0 +1,57 @@
+.Aboutus h1,.contactus h1{
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px auto;
+  letter-spacing: 1px;
+  color: #ff1493;
+  font-weight: 900;
+  text-decoration: underline;
+}
+.Aboutus h2{
+  font-size: 2rem;
+  font-family: cursive;
+  letter-spacing: 1px;
+  color: #ff1493;
+}
+.Aboutus div, .contactus,.contactusform{
+  width: 70%;
+  margin: 0 auto;
+}
+.Aboutus p{
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+.developer img{
+  height: 40%;
+  width: 30%;
+  border-radius: 10px;
+  float: right;
+  margin: 0 20px 20px 20px;
+}
+.contactusform h3{
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  color:#ff1493;
+}
+.contactusform table{
+  margin: 0 auto;
+}
+.contactusform table input{
+  height: 1.2rem;
+  width: auto;
+}
+.contactusform button{
+  height: 2rem;
+  width: 100px;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.contactusform button:hover{
+  background-color: #f0f8ff;
+  position: relative;
+  top: 4px;
+}

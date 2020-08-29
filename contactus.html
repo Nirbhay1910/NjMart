@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="AboutusStyles.css">
+  <!-- Favicon -->
+  <link rel="icon" href="images/Favicon.ico">
+  <!-- GoogleFonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/9b6479c374.js" crossorigin="anonymous"></script>
+  <title>NjMart</title>
+</head>
+
+<body>
+  <section>
+    <div class="navbar">
+      <h1>NjMART</h1>
+      <div class="cart">
+        <div id="noofitems" class="noofitems">
+          <center>
+            <p id="noofitems2">0</p>
+          </center>
+        </div>
+        <i class="fas fa-cart-arrow-down"></i>
+      </div>
+      <form class="searchbar" action="index.html" method="post">
+        <input type="text" placeholder="search..." value=""></input>
+        <button type="submit" name="button"><i class="fas fa-search"></i></button>
+      </form>
+      <a href="#" onclick="signupfunction()">Sign Up</a>
+      <div id="signup" class="mod-sign-up">
+        <div class="sign-up-content">
+          <i onclick="signupclose()" class="far fa-times-circle"></i>
+          <center>
+            <i class="fas fa-user-circle"></i><br><br><br>
+            <form name="signup-form" class="signup-form" onsubmit="return validatesignup()" action="index.html" method="post">
+              <i class="far fa-user"> </i>
+              <input id="username" type="text" name="" placeholder="Username">
+              <br><br>
+              <i class="far fa-envelope"> </i>
+              <input id="email-signup" type="text" placeholder="abc@email.com" value="">
+              <br>
+              <br>
+              <i class="fas fa-phone"></i>
+              <input id="phone" type="text" placeholder="1234567890" value="">
+              <br><br>
+              <i class="fas fa-key"> </i>
+              <input id="password-signup" type="password" placeholder="Password.." value="">
+              <br>
+              <br>
+              <i class="fas fa-key"> </i>
+              <input id="confirm-password-signup" type="password" placeholder="Confirm password.." value="">
+              <br>
+              <br>
+              <button class="loginBtn" type="submit" name="button">Sign Up</button>
+            </form>
+            <br>
+            <a onclick="closesignupAndopenLogin()" class="formlink" style="  color: blue;font-size: 1rem;text-decoration: underline;float: none;padding: 0;" href="#">Already a member? LogIn</a>
+          </center>
+        </div>
+      </div>
+      <a href="#" onclick="myfunction1()">LogIn</a>
+      <div id="login" class="mod-log-in">
+        <div class="log-in-content">
+          <i onclick="myfunction2()" class="far fa-times-circle"></i>
+          <center>
+            <i class="fas fa-user-circle"></i>
+            <form name="login-form" class="login-form" onsubmit="return validateLogIn()" action="index.html" method="post"><br>
+              <i class="far fa-envelope"> </i>
+              <input id="email-login" type="text" placeholder="abc@email.com" value="">
+              <br>
+              <br>
+              <i class="fas fa-key"> </i>
+              <input id="password-login" type="password" placeholder="Password.." value="">
+              <br>
+              <br>
+              <br>
+              <input type="checkbox" name="" value="">
+              <label>Remember me</label>
+              <br>
+              <br>
+              <button class="loginBtn" type="submit" name="button">LogIn</button>
+            </form>
+            <br>
+            <a class="formlink" style="  color: blue;font-size: 1rem;text-decoration: underline;float: none;padding: 0;" href="#">forgot password?</a>
+          </center>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Categories</a>
+        <div class="dropdown-content">
+          <a href="men-clothing.html">Men-clothing</a>
+          <a href="women-clothing.html">Women-clothing</a>
+        </div>
+      </div>
+      <a href="index.html">Home</a>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <section>
+    <div class="contactus">
+      <h1>Contact Us</h1>
+      <form class="contactusform" onsubmit="return validateContactus()"action="index.html" method="post">
+        <table>
+          <tr>
+            <td><h3>Name : </h3></td>
+            <td><input id="contactname" type="text" name="" placeholder="Name"></td>
+          </tr>
+          <tr>
+            <td><h3>E-mail : </h3></td>
+            <td><input id="contactemail" type="text" placeholder="abc@email.com" value=""></td>
+          </tr>
+          <tr>
+            <td><h3>Phone no. : </h3></td>
+            <td><input id="contactphone" type="text" placeholder="1234567890" value=""></td>
+          </tr>
+          <tr>
+            <td><h3>Your Query : </h3></td>
+            <td><input id="yourquery"type="text" name="" value="" placeholder="Your query.."></td>
+          </tr>
+        </table>
+        <br>
+        <center><button type="submit" name="button"> submit </button></center>
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+    <!-- footer -->
+    <br>
+    <br><br><br>
+
+    <section>
+      <footer>
+        <div class="connection">
+          <h2>NjMART</h2>
+          <table>
+            <tr>
+              <td><i class="fab fa-instagram"></i></td>
+              <td><i class="fab fa-facebook"></i></td>
+              <td><i class="fab fa-twitter"></i></td>
+            </tr>
+          </table>
+        </div>
+        <a class="first" href="AboutUs.html">About Us</a>
+        <a class="second" href="contactus.html">Contact Us</a>
+        <a class="third" href="contactus.html">Need Help?</a>
+        <br>
+        <br>
+        <p>&copy; 2020 NjMart.com</p>
+      </footer>
+    </section>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="script3.js"></script>
+  </body>
+
+  </html>
