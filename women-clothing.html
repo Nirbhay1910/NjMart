@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menstyles.css">
+  <!-- Favicon -->
+  <link rel="icon" href="images/Favicon.ico">
+  <!-- GoogleFonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/9b6479c374.js" crossorigin="anonymous"></script>
+  <title>Women clothing</title>
+</head>
+
+<body>
+  <section>
+    <div class="navbar">
+      <h1>NjMART</h1>
+      <div class="cart">
+            <div id="noofitems" class="noofitems">
+              <center>
+                <p id="noofitems2">0</p>
+              </center>
+            </div>
+        <i class="fas fa-cart-arrow-down"></i>
+      </div>
+      <form class="searchbar" action="index.html" method="post">
+        <input type="text" placeholder="search..." value=""></input>
+        <button type="submit" name="button"><i class="fas fa-search"></i></button>
+      </form>
+      <a href="#" onclick="signupfunction()">Sign Up</a>
+      <div id="signup" class="mod-sign-up">
+        <div class="sign-up-content">
+          <i onclick="signupclose()" class="far fa-times-circle"></i>
+          <center>
+            <i class="fas fa-user-circle"></i><br><br><br>
+            <form name="signup-form" class="signup-form" onsubmit="return validatesignup()" action="index.html" method="post">
+              <i class="far fa-user"> </i>
+              <input id="username" type="text" name="" placeholder="Username">
+              <br><br>
+              <i class="far fa-envelope"> </i>
+              <input id="email-signup" type="text" placeholder="abc@email.com" value="">
+              <br>
+              <br>
+              <i class="fas fa-phone"></i>
+              <input id="phone" type="text" placeholder="1234567890" value="">
+              <br><br>
+              <i class="fas fa-key"> </i>
+              <input id="password-signup" type="password" placeholder="Password.." value="">
+              <br>
+              <br>
+              <i class="fas fa-key"> </i>
+              <input id="confirm-password-signup" type="password" placeholder="Confirm password.." value="">
+              <br>
+              <br>
+              <button class="loginBtn" type="submit" name="button">Sign Up</button>
+            </form>
+            <br>
+            <a onclick="closesignupAndopenLogin()" class="formlink" style="  color: blue;font-size: 1rem;text-decoration: underline;float: none;padding: 0;" href="#">Already a member? LogIn</a>
+          </center>
+        </div>
+      </div>
+      <a href="#" onclick="myfunction1()">LogIn</a>
+      <div id="login" class="mod-log-in">
+        <div class="log-in-content">
+          <i onclick="myfunction2()" class="far fa-times-circle"></i>
+          <center>
+            <i class="fas fa-user-circle"></i>
+            <form name="login-form" class="login-form" onsubmit="return validateLogIn()" action="index.html" method="post"><br>
+              <i class="far fa-envelope"> </i>
+              <input id="email-login" type="text" placeholder="abc@email.com" value="">
+              <br>
+              <br>
+              <i class="fas fa-key"> </i>
+              <input id="password-login" type="password" placeholder="Password.." value="">
+              <br>
+              <br>
+              <br>
+              <input type="checkbox" name="" value="">
+              <label>Remember me</label>
+              <br>
+              <br>
+              <button class="loginBtn" type="submit" name="button">LogIn</button>
+            </form>
+            <br>
+            <a class="formlink" style="  color: blue;font-size: 1rem;text-decoration: underline;float: none;padding: 0;" href="#">forgot password?</a>
+          </center>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Categories</a>
+        <div class="dropdown-content">
+          <a href="men-clothing.html">Men-clothing</a>
+          <a href="women-clothing.html">Women-clothing</a>
+        </div>
+      </div>
+      <a href="index.html">Home</a>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- WOMen clothes Cards -->
+
+
+  <section class="women-section">
+    <center>
+      <h2>Women's Section</h2>
+    </center>
+    <center>
+      <div class="card1 card">
+        <center>
+          <img src="images/women1.jpg" alt="">
+          <h3>RARE</h3>
+          <p>Burgundy Crepe Blouson Top</p>
+          <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i>
+          <center onclick="showwomencard1()" class="view-btn">
+            <p>
+              <center>View</center>
+            </p>
+          </center>
+          <h3>Rs. 549 <span class="strike">Rs.999 </span> <span class="discounter">(45% off)</span></h3>
+        </center>
+      </div>
+      <div class="card1 card">
+        <center>
+          <img src="images/women2.jpg" alt="">
+          <h3>DOROTHY PERKINS</h3>
+          <p>Black Regular Fit Cropped Trousers</p>
+          <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i><i class="far fa-star blank"></i>
+          <center onclick="showwomencard2()" class="view-btn">
+            <p>
+              <center>View</center>
+            </p>
+          </center>
+          <h3>Rs. 1495 <span class="strike">Rs.2990 </span> <span class="discounter">(50% off)</span></h3>
+        </center>
+      </div>
+      <div class="card1 card">
+        <center>
+          <img src="images/women3.jpg" alt="">
+          <h3>Mast & Harbour</h3>
+          <p>Women Pink Solid Pumps</p>
+          <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i>
+          <center onclick="showwomencard3()" class="view-btn">
+            <p>
+              <center>View</center>
+            </p>
+          </center>
+          <h3>Rs. 1034 <span class="strike">Rs.2299 </span> <span class="discounter">(55% off)</span></h3>
+        </center>
+      </div>
+    </center>
+  </section>
+
+
+
+<!-- card2 -->
+
+
+
+  <section>
+    <center>
+      <div class="card2 card">
+        <center>
+          <img src="images/women4.jpg" alt="">
+          <h3>Kvsfab</h3>
+          <p>Women Black Embroidered A-Line Kurti</p>
+          <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i><i class="far fa-star blank"></i>
+          <center onclick="showwomencard4()" class="view-btn">
+            <p>
+              <center>View</center>
+            </p>
+          </center>
+          <h3>Rs. 859 <span class="strike">Rs.1999 </span> <span class="discounter">(57% off)</span></h3>
+        </center>
+      </div>
+      <div class="card2 card">
+        <center>
+          <img src="images/women5.jpg" alt="">
+          <h3>AKS</h3>
+          <p>Blue & Golden Printed Straight Palazzos</p>
+          <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i><i class="far fa-star blank"></i>
+          <center onclick="showwomencard5()" class="view-btn">
+            <p>
+              <center>View</center>
+            </p>
+          </center>
+          <h3>Rs. 649 <span class="strike">Rs.999 </span> <span class="discounter">(35% off)</span></h3>
+        </center>
+      </div>
+      <div class="card2 card">
+        <center>
+          <img src="images/women6.jpg" alt="">
+          <h3>TULIP 21</h3>
+          <p>Multicoloured Embroidered Open Jacket</p>
+          <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i>
+          <center onclick="showwomencard6()" class="view-btn">
+            <p>
+              <center>View</center>
+            </p>
+          </center>
+          <h3>Rs. 1949 <span class="strike">Rs.2599 </span> <span class="discounter">(25% off)</span></h3>
+        </center>
+      </div>
+    </center>
+  </section>
+  <center>
+    <div class="pagination">
+      <a onclick="checkPages(-1)" class="" href="#">&laquo;</a>
+      <a onclick="currentpage(1)" class="pages" href="#">1</a>
+      <a onclick="currentpage(2)" class="pages" href="#">2</a>
+      <a onclick="checkPages(1)" class="" href="#">&raquo;</a>
+    </div>
+  </center>
+
+
+<!-- view options -->
+
+<section>
+  <div id="women1" class="modal">
+    <div class="men1-contents">
+      <i onclick="closewomen1card()"class="far fa-times-circle"></i>
+      <table class="view-table">
+        <tr>
+          <td style="width: 50%;"><img class="view-men-img"src="images/women1.jpg"></td>
+          <td>
+            <h3>RARE</h3>
+            <p>Burgundy Crepe Blouson Top</p>
+            <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i>
+            <br>
+            <h3 style="font-size: 1.2rem;"class="view-price">Rs. 549 <span class="strike">Rs.999 </span> <span class="discounter">(45% off)</span></h3>
+            <p style="color:green; font-size: 1rem; margin: 0;">inclusive of all taxes</p>
+            <br>
+            <div class="size-box">
+              <span class="size">S</span>
+            </div>
+            <div class="size-box">
+              <span class="size">M</span>
+            </div>
+            <div class="size-box">
+              <span class="size">L</span>
+            </div>
+            <div class="size-box">
+              <span class="size">XL</span>
+            </div>
+            <br>
+            <center><button onclick="woaddtocart(1,0)"id="women1-add-to-cart"class="addtocart"type="button" name="button">Add to cart</button></center>
+            <br>
+            <center><button onclick="woaddtocart(-1,1)"id="women1-added-to-cart"class="addtocart" style="background-color: yellow;"type="button" name="button">Added to cart</button></center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- women2 -->
+
+
+  <div id="women2" class="modal">
+    <div class="men1-contents">
+      <i onclick="closewomen2card()"class="far fa-times-circle"></i>
+      <table class="view-table">
+        <tr>
+          <td style="width: 50%;"><img class="view-men-img"src="images/women2.jpg"></td>
+          <td>
+            <h3>DOROTHY PERKINS</h3>
+            <p>Black Regular Fit Cropped Trousers</p>
+            <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i><i class="far fa-star blank"></i><br>
+            <h3 style="font-size: 1.2rem;"class="view-price">Rs. 1495 <span class="strike">Rs.2990 </span> <span class="discounter">(50% off)</span></h3>
+            <p style="color:green; font-size: 1rem; margin: 0;">inclusive of all taxes</p>
+            <br>
+            <div class="size-box">
+              <span class="size">S</span>
+            </div>
+            <div class="size-box">
+              <span class="size">M</span>
+            </div>
+            <div class="size-box">
+              <span class="size">L</span>
+            </div>
+            <div class="size-box">
+              <span class="size">XL</span>
+            </div>
+            <br>
+            <center><button onclick="woaddtocart2(1,0)"id="women2-add-to-cart"class="addtocart"type="button" name="button">Add to cart</button></center>
+            <br>
+            <center><button onclick="woaddtocart2(-1,1)"id="women2-added-to-cart"class="addtocart" style="background-color: yellow;"type="button" name="button">Added to cart</button></center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- women3 -->
+
+  <div id="women3" class="modal">
+    <div class="men1-contents">
+      <i onclick="closewomen3card()"class="far fa-times-circle"></i>
+      <table class="view-table">
+        <tr>
+          <td style="width: 50%;"><img class="view-men-img"src="images/women3.jpg"></td>
+          <td>
+            <h3>Mast & Harbour</h3>
+            <p>Women Pink Solid Pumps</p>
+            <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i>
+            <h3 style="font-size: 1.2rem;"class="view-price">Rs.1034 <span class="strike">Rs.2299 </span> <span class="discounter">(55% off)</span></h3>
+            <p style="color:green; font-size: 1rem; margin: 0;">inclusive of all taxes</p>
+            <br>
+            <div class="size-box">
+              <span class="size">S</span>
+            </div>
+            <div class="size-box">
+              <span class="size">M</span>
+            </div>
+            <div class="size-box">
+              <span class="size">L</span>
+            </div>
+            <div class="size-box">
+              <span class="size">XL</span>
+            </div>
+            <br>
+            <center><button onclick="woaddtocart3(1,0)"id="women3-add-to-cart"class="addtocart"type="button" name="button">Add to cart</button></center>
+            <br>
+            <center><button onclick="woaddtocart3(-1,1)"id="women3-added-to-cart"class="addtocart" style="background-color: yellow;"type="button" name="button">Added to cart</button></center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- women4 -->
+
+  <div id="women4" class="modal">
+    <div class="men1-contents">
+      <i onclick="closewomen4card()"class="far fa-times-circle"></i>
+      <table class="view-table">
+        <tr>
+          <td style="width: 50%;"><img class="view-men-img"src="images/women4.jpg"></td>
+          <td>
+            <h3>Kvsfab</h3>
+            <p>Women Black Embroidered A-Line Kurti</p>
+            <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i><i class="far fa-star blank"></i>
+            <h3 style="font-size: 1.2rem;"class="view-price">Rs. 859 <span class="strike">Rs.1999 </span> <span class="discounter">(57% off)</span></h3>
+            <p style="color:green; font-size: 1rem; margin: 0;">inclusive of all taxes</p>
+            <br>
+            <div class="size-box">
+              <span class="size">S</span>
+            </div>
+            <div class="size-box">
+              <span class="size">M</span>
+            </div>
+            <div class="size-box">
+              <span class="size">L</span>
+            </div>
+            <div class="size-box">
+              <span class="size">XL</span>
+            </div>
+            <br>
+            <center><button onclick="woaddtocart4(1,0)"id="women4-add-to-cart"class="addtocart"type="button" name="button">Add to cart</button></center>
+            <br>
+            <center><button onclick="woaddtocart4(-1,1)"id="women4-added-to-cart"class="addtocart" style="background-color: yellow;"type="button" name="button">Added to cart</button></center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- women5 -->
+
+
+  <div id="women5" class="modal">
+    <div class="men1-contents">
+      <i onclick="closewomen5card()"class="far fa-times-circle"></i>
+      <table class="view-table">
+        <tr>
+          <td style="width: 50%;"><img class="view-men-img"src="images/women5.jpg"></td>
+          <td>
+            <h3>AKS</h3>
+            <p>Blue & Golden Printed Straight Palazzos</p>
+            <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i><i class="far fa-star blank"></i>
+            <h3 style="font-size: 1.2rem;"class="view-price">Rs.649 <span class="strike">Rs.999 </span> <span class="discounter">(35% off)</span></h3>
+            <p style="color:green; font-size: 1rem; margin: 0;">inclusive of all taxes</p>
+            <br>
+            <div class="size-box">
+              <span class="size">S</span>
+            </div>
+            <div class="size-box">
+              <span class="size">M</span>
+            </div>
+            <div class="size-box">
+              <span class="size">L</span>
+            </div>
+            <div class="size-box">
+              <span class="size">XL</span>
+            </div>
+            <br>
+            <center><button onclick="woaddtocart5(1,0)"id="women5-add-to-cart"class="addtocart"type="button" name="button">Add to cart</button></center>
+            <br>
+            <center><button onclick="woaddtocart5(-1,1)"id="women5-added-to-cart"class="addtocart" style="background-color: yellow;"type="button" name="button">Added to cart</button></center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- women6 -->
+
+
+  <div id="women6" class="modal">
+    <div class="men1-contents">
+      <i onclick="closewomen6card()"class="far fa-times-circle"></i>
+      <table class="view-table">
+        <tr>
+          <td style="width: 50%;"><img class="view-men-img"src="images/women6.jpg"></td>
+          <td>
+            <h3>TULIP 21</h3>
+            <p>Multicoloured Embroidered Open Jacket</p>
+            <i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="fas fa-star gold"></i><i class="far fa-star blank"></i>
+            <h3 style="font-size: 1.2rem;"class="view-price">Rs. 1949 <span class="strike">Rs.2599 </span> <span class="discounter">(25% off)</span></h3>
+            <p style="color:green; font-size: 1rem; margin: 0;">inclusive of all taxes</p>
+            <br>
+            <div class="size-box">
+              <span class="size">S</span>
+            </div>
+            <div class="size-box">
+              <span class="size">M</span>
+            </div>
+            <div class="size-box">
+              <span class="size">L</span>
+            </div>
+            <div class="size-box">
+              <span class="size">XL</span>
+            </div>
+            <br>
+            <center><button onclick="woaddtocart6(1,0)"id="women6-add-to-cart"class="addtocart"type="button" name="button">Add to cart</button></center>
+            <br>
+            <center><button onclick="woaddtocart6(-1,1)"id="women6-added-to-cart"class="addtocart" style="background-color: yellow;"type="button" name="button">Added to cart</button></center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+  <!-- footer -->
+
+
+  <section>
+      <footer>
+        <div class="connection">
+          <h2>NjMART</h2>
+          <table>
+            <tr>
+              <td><i class="fab fa-instagram"></i></td>
+              <td><i class="fab fa-facebook"></i></td>
+              <td><i class="fab fa-twitter"></i></td>
+            </tr>
+          </table>
+        </div>
+        <a class="first" href="AboutUs.html">About Us</a>
+        <a class="second" href="contactus.html">Contact Us</a>
+        <a class="third" href="contactus.html">Need Help?</a>
+        <br>
+        <br>
+        <p>&copy; 2020 NjMart.com</p>
+      </footer>
+    </section>
+    <script src="script2.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+
+  </body>
+
+</html>

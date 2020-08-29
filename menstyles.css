@@ -1,0 +1,159 @@
+.men-section h2{
+  margin-bottom: 30px;
+  font-family: cursive;
+  font-size: 3rem;
+  color: #000080;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+.women-section h2{
+  margin-bottom: 30px;
+  font-family: cursive;
+  font-size: 3rem;
+  color: #ff1493;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+.card{
+  display: inline-block;
+  width: 22vw;
+  border: solid 2px black;
+  margin: 20px 50px 30px 50px;
+}
+.card center img{
+  height: 70%;
+  width: 60%;
+  padding: 10px;
+}
+.card center h3, .card center p{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.view-btn{
+  height:auto;
+  border: solid 1px gray;
+  color: gray;
+  padding: 5px;
+  width: 80%;
+  margin: 10px auto;
+}
+.view-btn p{
+  margin: 0;
+  cursor: pointer;
+}
+.view-btn:hover{
+  border: solid 1px black;
+  color: black;
+  cursor: pointer;
+}
+.strike{
+  text-decoration: line-through;
+  font-weight: normal;
+  color: gray;
+  padding-left: 5px;
+}
+.discounter{
+  color: red;
+  font-weight: lighter;
+  padding-left: 5px;
+}
+.gold{
+  color: gold;
+}
+.blank{
+  color: gray;
+}
+.pagination{
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+.pagination a.active {
+  background-color: #9400d3;
+  color: white;
+}
+.card2{
+  display: none;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.modal{
+  display: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+.men1-contents{
+  background-color: white;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #000;
+  height: auto;
+  width: 50%;
+}
+.view-men-img{
+  height: auto;
+  width: 90%;
+}
+.view-table tr td h3{
+  font-size: 1.6rem;
+  color: #333;
+}
+.view-table tr td p{
+  font-family:sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.size-box{
+  display: inline-block;
+  margin:0 5% 10px 5%;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  border: solid 2px gray;
+  position: relative;
+  cursor: pointer;
+}
+.size-box:hover{
+  border: solid 2px red;
+}
+.size{
+  font-size: 1rem;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.addtocart{
+  height: 40px;
+  font-family:serif;
+  font-size: 1.2rem;
+  width: 90%;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color:#4cd137;
+  border-radius: 20px;
+}
+.addtocart:hover{
+  background-color: #44bd32;
+  position:relative;
+  top: 2px;
+}
+#men1-added-to-cart,#men2-added-to-cart,#men3-added-to-cart,#men4-added-to-cart,#men5-added-to-cart,#men6-added-to-cart{
+  display: none;
+  margin: 0;
+}
+#women1-added-to-cart,#women2-added-to-cart,#women3-added-to-cart,#women4-added-to-cart,#women5-added-to-cart,#women6-added-to-cart{
+  display: none;
+  margin: 0;
+}

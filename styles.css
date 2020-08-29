@@ -1,0 +1,326 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+}
+.navbar{
+  background-color: #ff1493;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+.navbar h1{
+  font-family: cursive;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding-left: 3%;
+  color: white;
+  font-weight: 900;
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff5ee;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 25px;
+  float: right;
+}
+.navbar a:hover{
+  color: #333;
+}
+.dropdown-content{
+  display: none;
+  position: fixed;
+  top: 74px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a{
+  display: block;
+  text-decoration: none;
+  color: #333;
+  float: none;
+  padding: 12px 16px;
+  text-align: left;
+}
+.dropdown-content a:hover{
+  background-color: #ddd;
+}
+.searchbar {
+  display: inline-block;
+  float: right;
+  padding: 25px;
+}
+.dropdown{
+  display: inline-block;
+  float: right;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.cart{
+  display: inline-block;
+  float: right;
+}
+.fa-cart-arrow-down{
+  color: #fff5ee;
+  font-size: 1.2rem;
+  padding: 25px;
+}
+#noofitems{
+  color: white;
+  background-color: orange;
+  float: right;
+  position: relative;
+  top: 15px;
+  right: 25px;
+  border-radius: 100%;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+#noofitems2{
+  margin: 0;
+  padding-top: 2px;
+  font-size: 0.9rem;
+}
+.mod-log-in, .mod-sign-up{
+  display: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+.log-in-content,.sign-up-content{
+  background-color: #fae1f4;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #000;
+  width: 30%;
+  border-radius: 10px;
+}
+.fa-user-circle{
+  padding-left: 10px;
+  font-size: 120px;
+  display: block;
+}
+.fa-envelope,.fa-key,.fa-user,.fa-phone{
+  font-size: 1.6rem;
+  padding-right: 5px;
+}
+.fa-times-circle{
+  cursor: pointer;
+  float: right;
+  font-size: 1.2rem;
+}
+.fa-times-circle:hover{
+  color: gray;
+}
+.loginBtn{
+  height: 40px;
+  width: 90px;
+  font-size: 1rem;
+  color: black;
+  border-radius: 20px;
+  background-color: white;
+  text-shadow: none;
+}
+.loginBtn:hover{
+  background-color: #dcdcdc;
+  position:relative;
+  top:2px;
+}
+#password-login, #email-login,#username ,#confirm-password-signup,#password-signup,#email-signup,#phone{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px black;
+  background: none;
+  font-size: 1.2rem;
+  height: 1.6rem;
+}
+
+
+/* offers */
+
+
+.offer-men{
+  background:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("images/offer2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 500px;
+  cursor: pointer;
+}
+.offer-women{
+  background:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("images/offer-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 500px;
+  cursor: pointer;
+}
+.offer-logo{
+  height: 40%;
+  width: 150px;
+}
+.offer-men h1, .offer-women h1{
+  display: block;
+  /* margin: auto; */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-180%);
+  font-size: 2.8rem;
+  color: red;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+}
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: 	#b22222;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* discount */
+
+.bank-border{
+  border-right: solid 2px;
+  width: 30%;
+}
+.discount tr td{
+  padding: 20px;
+}
+.bank-img{
+  width:100%;
+}
+.discount tr td h1{
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+
+
+/* footer */
+
+
+footer{
+  background-color: #ff1493;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+footer a{
+  text-decoration: none;
+  color: #fff5ee;
+  font-size: 1.2rem;
+  display: inline-block;
+  font-weight: bold;
+}
+.first{
+  position: absolute;
+  top: 20px;
+  padding-left: 10%;
+}
+.third{
+  /* padding-right: 20px; */
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  /* transform: translate(-100%,0); */
+}
+.second{
+  position:absolute;
+  top:20px;
+  left: 55%;
+  transform: translate(-50%,0);
+}
+.connection{
+  display: inline-block;
+  padding-left: 20px;
+}
+footer h2{
+  font-family: cursive;
+  color: #fff;
+  padding-left: 10%;
+  font-size: 1.6rem;
+  font-weight: 900;
+  width: 100px;
+  letter-spacing: 2px;
+}
+.fa-instagram,.fa-facebook,.fa-twitter{
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+footer p{
+  color:#fff5ee;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0;
+}
